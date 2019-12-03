@@ -1,8 +1,12 @@
-class Dog {  String name;  public static void main (String[] args) {
+class Dog {
+    String name;
+    public static void main (String[] args) {
     // make a Dog object and access it
     Dog dog1 = new Dog();
-    dog1.bark();
+
     dog1.name = "Bart";
+    dog1.bark();
+
     // now make a Dog array
     Dog[] myDogs = new Dog[3];
     // and put some dogs in it
@@ -25,7 +29,7 @@ class Dog {  String name;  public static void main (String[] args) {
     }
 }
     public void bark() {
-    System.out.println(name + "says Ruff!");
+    System.out.println(name + " says Ruff!");
 }
     public void eat() {
 
