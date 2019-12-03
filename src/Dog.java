@@ -11,10 +11,10 @@ class Dog {  String name;  public static void main (String[] args) {
     myDogs[2] = dog1;
     // now access the Dogs using the array
     // references
-    myDogs[0].name = Fred”;
-    myDogs[1].name = Marge”;
+    myDogs[0].name = "Fred";
+    myDogs[1].name = "Marge";
     // Hmmmm... what is myDogs[2] name?
-    System.out.print(last dog’s name is );
+    System.out.print("last dog’s name is ");
     System.out.println(myDogs[2].name);
     // now loop through the array
     // and tell all dogs to bark
@@ -25,7 +25,7 @@ class Dog {  String name;  public static void main (String[] args) {
     }
 }
     public void bark() {
-    System.out.println(name +  says Ruff!”);
+    System.out.println(name + "says Ruff!");
 }
     public void eat() {
 
