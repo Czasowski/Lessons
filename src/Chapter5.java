@@ -1,4 +1,4 @@
-import java.io.*;
+/* import java.io.*;
 
 class SimpleDotCom {
     int[] locationCells;
@@ -65,4 +65,34 @@ class GameHelper {
         return inputLine;
     }
 }
+
+ */
+/*
+ class ForLoop {
+    for (int i = 0; i<8; i++) {
+         System.out.println(i);
+         создает и, пока меньше 8, каждый цикл и++
+
+     }
+for {String name : nameArray} {
+    каждый элемент эррей присваевается имя нейм и цикл идет для каждого элемента
+     }
+int x =0;
+int z = ++x;
+ z и x оба равны 1
+     int q = 0;
+ int w = q++;
+ q = 1 а w = 0
+
+             casting primitives
+     long y = 42;
+ int x = (int) y;
+
+ float f = 3.231f;
+ int x = (int) f;
+ x = 3 теперь
+ }
+
+ */
+
 
