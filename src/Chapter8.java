@@ -8,6 +8,36 @@ public class Chapter8 { //Serious Polymorphism
     //если не ясно что это за объект изначально можно чекнуть
     // if (o instaceof Dog) { Dog d = (Dog) o; }
 }
+
+interface Nose {
+    public int iMethod();
+}
+abstract class Picasso implements Nose {
+    public int iMethod() {
+        return 7;
+    }
+}
+class Clowns extends Picasso {}
+class Acts extends Picasso {
+    public int iMethod() {
+        return 5;
+    }
+}
+class Of76 extends Clowns {
+    public static void main (String [] args) {
+Nose[] i = new Nose[3];
+i[0] = new Acts();
+i[1] = new Clowns();
+i[2] = new Of76();
+for(int x = 0; x < 3; x++) {
+    System.out.println(i[x].iMethod() + " " + i[x].getClass());
+}
+    }
+}
+
+/*
+
+
 class MyDogList {
     private Dog[] dogs = new Dog[5];
     private int nextIndex = 0;
@@ -25,6 +55,7 @@ class MyDogList {
             dogy.add(a);
         }
     }
+    */
 //getClass method
 //    Cat c = new Cat();
   //  System.out.println(c.getClass());
