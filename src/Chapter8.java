@@ -30,3 +30,14 @@ class MyDogList {
   //  System.out.println(c.getClass());
 //System.out.println(c.hashCode());
 //System.out.println(c.toString());
+
+//interface
+/* define
+public interface Pet {
+public abstract void beFriendly();
+    public abstract void play();
+}
+использовать
+class Dog extends Canine implements Pets {
+
+ */
