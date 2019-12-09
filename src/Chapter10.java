@@ -1,6 +1,6 @@
-package example.com;
+
 import javax.sound.midi.*;
-public class BitBox {
+class BitBox {
  
 public void play()
 {

@@ -1,12 +1,12 @@
 
-//import java.io.SyncFailedException;
+
 class MyEx extends Exception {
 	
 }
-public class MyExTest {
+class MyExTest {
 	
 	public static void main(String[] args) {
-		String test = "no";
+		String test = "yes";
 		System.out.print("t");
 		try {
 			doRisky(test);
