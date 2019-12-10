@@ -47,6 +47,7 @@ public class Ch15ChatClient {
         }
     }
     public static void main(String[] args) {
+
         new Ch15ChatClient().go();
     }
 }
