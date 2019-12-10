@@ -35,6 +35,8 @@ class DailyAdviseClient {
     public static void main (String [] args) {
         DailyAdviseClient client = new DailyAdviseClient();
         client.go();
+
+
     }
 }
 //Server application makes a ServerSocket, on a specific port
