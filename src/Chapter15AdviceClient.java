@@ -35,8 +35,6 @@ class DailyAdviseClient {
     public static void main (String [] args) {
         DailyAdviseClient client = new DailyAdviseClient();
         client.go();
-
-
     }
 }
 //Server application makes a ServerSocket, on a specific port
@@ -51,3 +49,4 @@ class DailyAdviseClient {
     //client’s IP address and port number). The Socket is on
     //a different port than the ServerSocket, so that the
     //ServerSocket can go back to waiting for other clients
+
