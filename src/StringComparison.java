@@ -1,6 +1,8 @@
 import java.io.*;
+import java.text.NumberFormat;
+import java.time.format.DateTimeFormatter;
 import java.util.*;
-
+import java.time.*;
 public class StringComparison {
 
 
@@ -142,4 +144,49 @@ class WriteFile {
     }
 }
 
+class Lists {
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<String>();
+        list.add( "Альфа" ) ; list.add( "Дельта" ) ; list.add( "Чарли" );
+        System.out.println("List: " + list);
+        System.out.println("Replace: " + list.get(1) + "\n");
+            list.set(1, "Bravo");
+            list.forEach( (x)-> System.out.println("Element: " + x) );
 
+    }
+}
+
+class DateTime {
+    public static void main(String[] args) {
+        LocalDateTime date = LocalDateTime.now();
+        System.out.println("Now: " + date);
+        date = date.withYear(2020);
+        String fields = "\nГод:\t" + date.getYear() ;
+        fields += "\nМесяц:\t\t\t" + date.getMonth() ;
+        fields += "\nНомер месяца:\t\t" + date.getMonthValue() ;
+        fields += "\nДень недели:\t\t" + date.getDayOfWeek() ;
+        fields += "\nДень месяца:\t\t" + date.getDayOfMonth() ;
+        fields += "\nДень в году:\t\t" + date.getDayOfYear();
+        fields += "\nЧас (0-23):\t\t" + date.getHour() ;
+        fields += "\nМинута:\t\t\t" + date.getMinute() ;
+        fields += "\nСекунда:\t\t" + date.getSecond() ;
+        System.out.println( fields ) ;
+    }
+}
+
+class Formats {
+    public static void main(String[] args) {
+        NumberFormat nf = NumberFormat.getNumberInstance();
+        System.out.println("Number: " + nf.format(123456789));
+        NumberFormat cf = NumberFormat.getCurrencyInstance();
+        System.out.println("Currency: " + cf.format(1245.123f));
+        NumberFormat pf = NumberFormat.getPercentInstance();
+        System.out.println("Percent: " + pf.format(0.12f));
+        LocalDateTime  now = LocalDateTime.now();
+        DateTimeFormatter df = DateTimeFormatter.ofPattern( "MMM d, yyy" ) ;
+        System.out.println( "\nДата: " + now.format( df ) ) ;
+        DateTimeFormatter tf =  DateTimeFormatter.ofPattern( "h:m a" ) ;
+        System.out.println( "\nВремя: " + now.format( tf ) );
+
+    }
+}
